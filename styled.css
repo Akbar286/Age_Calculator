@@ -1,0 +1,130 @@
+@font-face {
+    font-family: pop;
+    src: url(./assets/fonts/Poppins-Regular.ttf);
+    
+}
+@font-face {
+    font-family: pop-bold;
+    src: url(./assets/fonts/Poppins-Bold.ttf);
+}
+*
+{
+    font-family: pop;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  
+    background-color:  hsl(0, 0%, 94%);
+}
+.container
+{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    border-bottom-right-radius: 110px;
+    width: 30rem;
+    padding: 10px;
+}
+.input-container
+{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+.input-container input
+{
+    height: 2rem;
+    width: 6rem;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    padding: 3px;
+
+}
+.input-container input:focus
+{
+    border: 2px solid hsl(259, 100%, 65%);
+}
+.input-container small
+{
+    color: hsl(0, 100%, 67%);
+    width: 100%;
+}
+.container-flex
+{
+    display: flex;
+    margin: 20px 5px;
+    border-bottom: 1px solid hsl(0, 0%, 86%);
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.btn
+{
+   background-color: hsl(259, 100%, 65%);
+   height: 60px;
+   width: 60px;
+   position: relative;
+   padding: 10px;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: none;
+   right: 20px;
+   top: 63px;
+   transition: all 6s ease-out;
+   
+}
+.btn :active
+{
+    transform: scale(1.3);
+    background-color: hsl(259, 100%, 65%);
+    padding: 12px;
+    border-radius: 50%;
+
+    transition: all 0.1s ease-out;
+    
+}
+
+.output-container
+{
+    margin: 20px 30px;
+}
+.output-container span
+{
+    color: hsl(259, 100%, 65%);
+    font-size: 3rem;
+    font-weight: bold;
+    
+    
+}
+.output-container h1
+{
+    font-family: pop-bold;
+    font-weight: bold;
+    font-size: 3rem;
+    margin: 0px;
+    
+}
+
+@media (max-width : 600px)
+{
+    .container-flex
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .btn{
+        top: 28px;
+    }
+    .container
+    {
+        margin: 10px;
+    }
+}
+
